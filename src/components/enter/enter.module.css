@@ -1,0 +1,22 @@
+.container {
+  width: 70%;
+  margin: auto;
+  margin-top: 20%;
+}
+
+.container h1 {
+  text-align: center;
+  border-bottom: 3px solid #8685ef;
+  width: 30%;
+  margin: auto;
+  padding-bottom: 1rem;
+  margin-bottom: 3rem;
+}
+
+.container p {
+  margin-top: 2rem;
+}
+
+.anchor {
+  height: 100px;
+}

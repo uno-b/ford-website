@@ -1,0 +1,32 @@
+Color Palette
+
+#2A2A2A (dark)
+#403E4E (gray)
+#8685EF (light blue)
+#FAF8FF (white)
+
+------------------------------------
+
+Fonts 
+
+Raleway + Roboto
+
+
+------------------------------- TODO ------------------------------- 
+
+For today:
+- Add ads
+- SEO
+- Contact us page
+
+
+
+
+Add payment section
+
+Formspree
+
+Responsiveness
+
+
+

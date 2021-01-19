@@ -1,5 +1,4 @@
 import React from "react"
-import enter1 from "../../images/enter-1.jpg"
 import styles from "./enter.module.css"
 
 const Enter = () => {
@@ -8,30 +7,26 @@ const Enter = () => {
       <div className={styles.anchor} id="enter" />
       <h1>How to enter?</h1>
       <p>
-        Enter the radio code when you see four horizontal lines on the display
-        screen. If you see the word wait, you need to leave the radio switched
-        on for up to 1 hour this will allow the radio to reset.
+        To enter the code just repeatedly press button 1 until the correct first
+        digit of the code is shown then do the same with number 2, 3 and 4 –
+        Please follow the entry pattern mentioned below.
       </p>
-      <p>
-        If Lock 10 is on-screen just press and hold the preset button 6 whilst
-        turning the radio on this will give you 3 final attempts to enter the
-        correct code.
-      </p>
-      <p>
-        If your radio is displays Locked 13 then the code will be of no use as
-        this radio would need to be manually decoded.
-      </p>
-      <h2>Example of code input:</h2>
+      <p>Or with the newest unit just type correct numbers.</p>
+      <p>After that just press button no. 5 or * to enter/confirm.</p>
+      <h2>Code Entry Pattern</h2>
       <ul>
         <li>Press 1 repeatedly for the first digit of your code.</li>
         <li>Press 2 repeatedly for the second digit of your code.</li>
         <li>Press 3 repeatedly for the third digit of your code.</li>
         <li>Press 4 repeatedly for the fourth digit of your code.</li>
-        <li>Once your radio code is showing on the display</li>
         <li>
-          press & hold the number 5 button until you hear an confirmation beep.
+          Cross check once the code you have entered is the correct as per the
+          unlock code for your radio which is showing on the display now.
         </li>
-        <img src={enter1} />
+        <li>
+          Now press & hold the number 5 button until you hear an Confirmation
+          Beep.
+        </li>
       </ul>
     </div>
   )

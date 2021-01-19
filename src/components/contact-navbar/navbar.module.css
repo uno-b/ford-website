@@ -1,6 +1,5 @@
 .nav {
   width: 100%;
-  height: 100%;
 }
 
 .nav ul {
@@ -36,8 +35,4 @@
 .nav ul li button:hover {
   background-color: #403e4e;
   color: #faf8ff;
-}
-
-.nav ul li button * {
-  margin-right: 0.5rem;
 }

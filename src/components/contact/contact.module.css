@@ -1,0 +1,41 @@
+.container {
+  width: 50%;
+  height: 100%;
+  margin: auto;
+}
+
+.contact-form {
+  margin-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #403e4e;
+  padding: 3rem;
+}
+
+.contact-form h1 {
+  margin-bottom: 3rem;
+  font-family: "Raleway";
+  color: #faf8ff;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+}
+
+.form-control {
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+
+.submit-button {
+  padding: 1rem;
+  border: none;
+  transition-duration: 0.2s;
+}
+
+.submit-button:hover {
+  background-color: #8685ef;
+  color: #faf8ff;
+}

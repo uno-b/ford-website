@@ -12,15 +12,6 @@
   padding-bottom: 1rem;
 }
 
-.container p,
-.container h2 {
-  margin-top: 2rem;
-}
-
-.container ul li {
-  margin-top: 1.5rem;
-}
-
 .anchor {
   height: 100px;
 }

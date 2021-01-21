@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import { useStaticQuery, graphql } from "gatsby"
 import styles from "./main.module.css"
 import img1 from "../../images/code-1.jpg"
 import img2 from "../../images/code-2.jpg"
@@ -7,9 +8,22 @@ import img4 from "../../images/code-4.jpg"
 
 const Why = () => {
   const [isInvalid, setIsInvalid] = useState(false)
+  const data = useStaticQuery(graphql`
+    {
+      allFordMXlsxSheet1 {
+        edges {
+          node {
+            Radio_Serial_Number
+            Unlock_Code
+          }
+        }
+      }
+    }
+  `)
 
   return (
     <div className={styles.container}>
+      <div className={styles.anchor} id="code" />
       <h1>Get Radio Code</h1>
       <div className={styles.codeContainer}>
         <p>Enter the serial below:</p>

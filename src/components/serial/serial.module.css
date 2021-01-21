@@ -24,3 +24,13 @@
 .anchor {
   height: 100px;
 }
+
+.image {
+  margin: auto;
+  text-align: center;
+}
+
+.image img {
+  width: 500px;
+  height: 400px;
+}

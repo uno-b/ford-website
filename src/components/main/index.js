@@ -1,9 +1,30 @@
-import React from "react"
-import styles from "./why.module.css"
+import React, { useState } from "react"
+import styles from "./main.module.css"
+import img1 from "../../images/code-1.jpg"
+import img2 from "../../images/code-2.jpg"
+import img3 from "../../images/code-3.jpg"
+import img4 from "../../images/code-4.jpg"
 
 const Why = () => {
+  const [isInvalid, setIsInvalid] = useState(false)
+
   return (
     <div className={styles.container}>
+      <h1>Get Radio Code</h1>
+      <div className={styles.codeContainer}>
+        <p>Enter the serial below:</p>
+        <input type="text" placeholder="Example: V123456 or M123456" />
+        <button>Find</button>
+        {isInvalid && <p className={styles.error}>Not found.</p>}
+      </div>
+      <div styles={styles.imageRow}>
+        <img src={img1} className={styles.galleryImage} />
+        <img src={img2} className={styles.galleryImage} />
+      </div>
+      <div styles={styles.imageRow}>
+        <img src={img3} className={styles.galleryImage} />
+        <img src={img4} className={styles.galleryImage} />
+      </div>
       <p>
         Unlock codes for Ford Escort, Fiesta, Focus, Mondeo, Galaxy, C-Max,
         Tourneo and Transit ETC Radios.

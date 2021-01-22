@@ -14,8 +14,9 @@
 
 .container h1 {
   text-align: center;
+  white-space: nowrap;
   border-bottom: 3px solid #8685ef;
-  width: 10%;
+  width: fit-content;
   margin: auto;
   padding-bottom: 1rem;
   margin-bottom: 3rem;

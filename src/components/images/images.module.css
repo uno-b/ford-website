@@ -6,6 +6,7 @@
 
 .container h1 {
   text-align: center;
+  white-space: nowrap;
   border-bottom: 3px solid #8685ef;
   width: 60%;
   margin: 3rem auto;
@@ -22,8 +23,57 @@
 }
 
 .image-row img {
-  width: 500px;
-  height: 400px;
+  width: 30vwpx;
   margin: 0.5rem;
   border: 2px solid black;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .image-row {
+    flex-direction: column;
+  }
+  .image-row img {
+    width: 70vw;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .image-row {
+    flex-direction: column;
+  }
+  .image-row img {
+    width: 70vw;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .image-row {
+    flex-direction: column;
+  }
+  .image-row img {
+    width: 70vw;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .image-row {
+    flex-direction: row;
+  }
+  .image-row img {
+    width: 35vw;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .image-row {
+    flex-direction: row;
+  }
+  .image-row img {
+    width: 35vw;
+  }
 }

@@ -14,17 +14,11 @@ Raleway + Roboto
 
 ------------------------------- TODO ------------------------------- 
 
-For today:
-- Add ads
-- SEO
-- Contact us page
+Add ads
 
-
-
+SEO
 
 Add payment section
-
-Formspree
 
 Responsiveness
 

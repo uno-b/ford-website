@@ -28,6 +28,7 @@
   white-space: nowrap;
   color: #faf8ff;
   font-family: "Raleway", sans-serif;
+  text-align: center;
 }
 
 .container p {
@@ -42,10 +43,82 @@
   padding: 1rem;
   border-radius: 1rem;
   transition-duration: 0.2s;
+  white-space: nowrap;
 }
 
 .container button:hover {
   background-color: #403e4e;
   color: #faf8ff;
   border: 2px solid #403e4e;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .container {
+    padding: 1.5rem;
+    top: 40vw;
+  }
+  .container h1 {
+    white-space: normal;
+    font-size: 1rem;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 500px) {
+  .container {
+    padding: 1.5rem;
+    top: 40vw;
+  }
+  .container h1 {
+    white-space: normal;
+    font-size: 1rem;
+  }
+  .container p {
+    font-size: 0.7rem;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .container {
+    padding: 2rem;
+  }
+  .container h1 {
+    white-space: normal;
+    font-size: 1.5rem;
+  }
+  .container p {
+    font-size: 1rem;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .container {
+    padding: 2rem;
+    top: 50%;
+  }
+  .container h1 {
+    white-space: nowrap;
+    font-size: 1.5rem;
+  }
+  .container p {
+    font-size: 1rem;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .container {
+    padding: 2rem;
+    top: 50%;
+  }
+  .container h1 {
+    white-space: nowrap;
+    font-size: 1.7rem;
+  }
+  .container p {
+    font-size: 1rem;
+  }
 }

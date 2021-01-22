@@ -26,15 +26,13 @@ const Why = () => {
       <div className={styles.anchor} id="code" />
       <h1>Get Radio Code</h1>
       <div className={styles.codeContainer}>
-        <p>Enter the serial below:</p>
-        <input type="text" placeholder="Example: V123456 or M123456" />
+        <p>Enter Serial:</p>
+        <input type="text" placeholder="Example: V123456" />
         <button>Find</button>
         {isInvalid && <p className={styles.error}>Not found.</p>}
       </div>
-      <div styles={styles.imageRow}>
-        <img src={img1} className={styles.galleryImage} />
-        <img src={img2} className={styles.galleryImage} />
-      </div>
+      <img src={img1} className={styles.galleryImage} />
+      <img src={img2} className={styles.galleryImage} />
       <div styles={styles.imageRow}>
         <img src={img3} className={styles.galleryImage} />
         <img src={img4} className={styles.galleryImage} />

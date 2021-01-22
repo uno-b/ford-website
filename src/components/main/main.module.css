@@ -6,8 +6,9 @@
 
 .container h1 {
   text-align: center;
+  white-space: nowrap;
+  width: fit-content;
   border-bottom: 3px solid #8685ef;
-  width: 60%;
   margin: 3rem auto;
   padding-bottom: 1rem;
 }
@@ -25,27 +26,29 @@
   display: flex;
   flex-direction: column;
   margin: 5rem auto;
-  width: 500px;
+  width: fit-content;
   background-color: #8685ef;
-  padding: 2rem;
+  padding: 1rem;
   border-radius: 1rem;
 }
 
 .code-container p {
-  margin: 0 0 0 2rem;
+  padding: 0 1rem 0 1rem;
+  margin: 1rem 0;
   color: #faf8ff;
   font-size: 1.5rem;
   font-weight: bold;
 }
 
 .code-container input {
-  margin: 2rem;
+  margin: 1rem;
 }
 
 .code-container button {
   width: 200px;
   margin: auto;
   padding: 0.5rem 1rem 0.5rem 1rem;
+  margin: 1rem auto;
   border: none;
   background-color: #403e4e;
   color: #faf8ff;
@@ -60,17 +63,11 @@
 
 .code-container .error {
   margin: 2rem 2rem 0 2rem;
-  text-align: center;
-}
-
-.image-row {
-  display: flex;
-  flex-direction: row;
 }
 
 .gallery-image {
-  width: 500px;
-  height: 400px;
+  width: 32.7vw;
+  height: 18vw;
   border: 2px solid black;
   border-radius: 1rem;
   margin: 0.5rem;
@@ -78,4 +75,58 @@
 
 .anchor {
   height: 100px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .code-container {
+    width: 100%;
+  }
+  .code-container button {
+    width: 150px;
+  }
+  .gallery-image {
+    width: 70vw;
+    height: 40vw;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .code-container {
+    width: 100%;
+  }
+  .gallery-image {
+    width: 70vw;
+    height: 40vw;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .code-container {
+    width: 100%;
+  }
+  .gallery-image {
+    width: 70vw;
+    height: 40vw;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .code-container {
+    width: 70%;
+  }
+  .gallery-image {
+    width: 32vw;
+    height: 28vw;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .code-container {
+    width: 70%;
+  }
 }

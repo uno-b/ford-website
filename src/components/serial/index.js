@@ -8,10 +8,8 @@ const Serial = () => {
   return (
     <div className={styles.container}>
       <div className={styles.anchor} id="serial" />
-      <h1>How to get your serial code?</h1>
-      <div className={styles.image}>
-        <img src={img1} />
-      </div>
+      <h1>Find Serial Code</h1>
+      <img src={img1} />
       <ul>
         <li>Press and hold buttons 1 & 6 together.</li>
         <li>
@@ -30,12 +28,8 @@ const Serial = () => {
           until the V number displays
         </li>
       </ul>
-      <div className={styles.image}>
-        <img src={img2} />
-      </div>
-      <div className={styles.image}>
-        <img src={img3} />
-      </div>
+      <img src={img2} />
+      <img src={img3} />
     </div>
   )
 }

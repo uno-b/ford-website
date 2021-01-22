@@ -7,45 +7,49 @@ import {
   FaCarAlt,
   FaPhone,
   FaImage,
+  FaAlignRight,
 } from "react-icons/fa"
 
-const Navbar = () => {
+const Navbar = ({ toggleSidebar }) => {
   return (
     <nav className={styles.nav}>
       <ul>
         <li>
           <button onClick={() => scrollTo("#code")}>
             <FaCheck />
-            Get Code
+            <p className={styles.navText}>Get Code</p>
           </button>
         </li>
 
         <li>
           <button onClick={() => scrollTo("#serial")}>
             <FaSortNumericDown />
-            Find Serial
+            <p className={styles.navText}>Find Serial</p>
           </button>
         </li>
 
         <li>
           <button onClick={() => scrollTo("#enter")}>
             <FaCarAlt />
-            How to Enter
+            <p className={styles.navText}>How to Enter</p>
           </button>
         </li>
         <li>
           <button onClick={() => scrollTo("#images")}>
             <FaImage />
-            Images
+            <p className={styles.navText}>Images</p>
           </button>
         </li>
         <li>
           <button onClick={() => scrollTo("#contact")}>
             <FaPhone />
-            Contact Us
+            <p className={styles.navText}>Contact Us</p>
           </button>
         </li>
       </ul>
+      <button className={styles.toggleBtn} onClick={toggleSidebar}>
+        <FaAlignRight />
+      </button>
     </nav>
   )
 }

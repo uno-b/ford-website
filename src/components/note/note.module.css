@@ -5,11 +5,9 @@
 }
 
 .wrapper {
-  background-color: #403e4e;
-  color: #faf8ff;
-  padding: 2rem;
-  margin: 1rem;
-  border-radius: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .container h1 {
@@ -23,9 +21,49 @@
 }
 
 .container p {
-  margin-top: 2rem;
+  background-color: #403e4e;
+  color: #faf8ff;
+  padding: 2rem;
+  margin: 1rem;
+  border-radius: 1rem;
+  line-height: 2rem;
 }
 
 .anchor {
   height: 100px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .wrapper {
+    flex-direction: column;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .wrapper {
+    flex-direction: column;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .wrapper {
+    flex-direction: column;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .wrapper {
+    flex-direction: row;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .wrapper {
+    flex-direction: row;
+  }
 }

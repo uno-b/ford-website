@@ -8,7 +8,7 @@
   text-align: center;
   white-space: nowrap;
   border-bottom: 3px solid #8685ef;
-  width: 60%;
+  width: fit-content;
   margin: 3rem auto;
   padding-bottom: 1rem;
 }
@@ -34,7 +34,7 @@
     flex-direction: column;
   }
   .image-row img {
-    width: 70vw;
+    width: 60vw;
   }
 }
 
@@ -44,7 +44,7 @@
     flex-direction: column;
   }
   .image-row img {
-    width: 70vw;
+    width: 60vw;
   }
 }
 
@@ -54,7 +54,7 @@
     flex-direction: column;
   }
   .image-row img {
-    width: 70vw;
+    width: 60vw;
   }
 }
 
@@ -64,7 +64,7 @@
     flex-direction: row;
   }
   .image-row img {
-    width: 35vw;
+    width: 22vw;
   }
 }
 
@@ -74,6 +74,6 @@
     flex-direction: row;
   }
   .image-row img {
-    width: 35vw;
+    width: 22vw;
   }
 }

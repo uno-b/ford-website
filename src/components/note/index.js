@@ -12,16 +12,12 @@ const Note = () => {
           screen. If you see the word wait, you need to leave the radio switched
           on for up to 1 hour this will allow the radio to reset.
         </p>
-      </div>
-      <div className={styles.wrapper}>
         <p>
           If “LOCKED 10 / LOCK 10” is being displayed on the screen just press
           and hold the preset button “6” whilst turning the radio on this method
           it will give you 3 more final attempts to enter the correct code for
           your radio.
         </p>
-      </div>
-      <div className={styles.wrapper}>
         <p>
           If your radio displays a message on the display as “LOCKED 13 / LOCK
           13” then this unlock code will be of no use to you as this radio need

@@ -20,22 +20,18 @@ const Images = () => {
       <div className={styles.imageRow}>
         <img src={img1} className={styles.image} />
         <img src={img2} className={styles.image} />
-      </div>
-      <div className={styles.imageRow}>
         <img src={img3} className={styles.image} />
-        <img src={img4} className={styles.image} />
       </div>
       <div className={styles.imageRow}>
+        <img src={img4} className={styles.image} />
         <img src={img5} className={styles.image} />
         <img src={img6} className={styles.image} />
       </div>
+      <div className={styles.imageRow}></div>
       <div className={styles.imageRow}>
         <img src={img7} className={styles.image} />
         <img src={img8} className={styles.image} />
-      </div>
-      <div className={styles.imageRow}>
         <img src={img9} className={styles.image} />
-        <img src={img10} className={styles.image} />
       </div>
     </div>
   )

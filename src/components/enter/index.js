@@ -1,16 +1,12 @@
 import React from "react"
 import styles from "./enter.module.css"
-import img1 from "../../images/enter-1.jpg"
-import img2 from "../../images/enter-2.jpg"
+import img1 from "../../images/enter-2.jpg"
 
 const Enter = () => {
   return (
     <div className={styles.container}>
       <div className={styles.anchor} id="enter" />
       <h1>How to enter?</h1>
-      <div className={styles.image}>
-        <img src={img1} />
-      </div>
       <p>
         To enter the code just repeatedly press button 1 until the correct first
         digit of the code is shown then do the same with number 2, 3 and 4 –
@@ -34,7 +30,7 @@ const Enter = () => {
         </li>
       </ul>
       <div className={styles.image}>
-        <img src={img2} />
+        <img src={img1} />
       </div>
     </div>
   )

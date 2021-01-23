@@ -48,9 +48,9 @@ const Why = () => {
       <div className={styles.anchor} id="code" />
       <h1>Get Radio Code</h1>
       <div className={styles.codeContainer}>
-        <label htmlFor="serial">Enter Serial:</label>
+        <label htmlFor="serial-input">Enter Serial:</label>
         <input
-          id="serial"
+          id="serial-input"
           type="text"
           value={serial}
           placeholder="Example: V123456"

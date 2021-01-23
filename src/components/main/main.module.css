@@ -1,7 +1,6 @@
 .container {
   width: 70%;
   margin: auto;
-  margin-top: 20%;
 }
 
 .container h1 {
@@ -72,7 +71,9 @@
 }
 
 .image-row img {
+  object-fit: cover;
   width: 21.5vw;
+  height: 180px;
   border: 2px solid black;
   border-radius: 1rem;
   margin: 0.5rem;

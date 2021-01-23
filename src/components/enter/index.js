@@ -30,7 +30,7 @@ const Enter = () => {
         </li>
       </ul>
       <div className={styles.image}>
-        <img src={img1} />
+        <img src={img1} alt="Key Code" />
       </div>
     </div>
   )

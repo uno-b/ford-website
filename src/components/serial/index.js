@@ -2,7 +2,6 @@ import React from "react"
 import styles from "./serial.module.css"
 import img1 from "../../images/serial-2.jpg"
 import img2 from "../../images/serial-1.jpg"
-import img3 from "../../images/serial-3.jpg"
 
 const Serial = () => {
   return (
@@ -28,8 +27,8 @@ const Serial = () => {
         </li>
       </ul>
       <div className={styles.images}>
-        <img src={img1} />
-        <img src={img2} />
+        <img src={img1} alt="Example Serial Code" />
+        <img src={img2} alt="Example Serial Code 2" />
       </div>
     </div>
   )

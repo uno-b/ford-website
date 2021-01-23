@@ -48,8 +48,9 @@ const Why = () => {
       <div className={styles.anchor} id="code" />
       <h1>Get Radio Code</h1>
       <div className={styles.codeContainer}>
-        <p>Enter Serial:</p>
+        <label htmlFor="serial">Enter Serial:</label>
         <input
+          id="serial"
           type="text"
           value={serial}
           placeholder="Example: V123456"
@@ -59,9 +60,9 @@ const Why = () => {
         {isInvalid && <p className={styles.error}>Not found.</p>}
       </div>
       <div className={styles.imageRow}>
-        <img src={img1} />
-        <img src={img2} />
-        <img src={img3} />
+        <img src={img1} alt="Example 1" />
+        <img src={img2} alt="Example 2" />
+        <img src={img3} alt="Example 3" />
       </div>
       <p>
         Unlock codes for Ford Escort, Fiesta, Focus, Mondeo, Galaxy, C-Max,

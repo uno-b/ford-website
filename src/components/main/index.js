@@ -4,21 +4,44 @@ import styles from "./main.module.css"
 import img1 from "../../images/code-1.jpg"
 import img2 from "../../images/code-2.jpg"
 import img3 from "../../images/code-3.jpg"
+import { navigate } from "gatsby"
 
 const Why = () => {
   const [isInvalid, setIsInvalid] = useState(false)
+  const [serial, setSerial] = useState("")
   const data = useStaticQuery(graphql`
     {
       allFordMXlsxSheet1 {
-        edges {
-          node {
-            Radio_Serial_Number
-            Unlock_Code
-          }
+        nodes {
+          Radio_Serial_Number
+          Unlock_Code
+        }
+      }
+      allFordVXlsxSheet1 {
+        nodes {
+          Radio_Serial_Number
+          Unlock_Code
         }
       }
     }
   `)
+
+  const codes = new Map()
+  data.allFordMXlsxSheet1.nodes.map(
+    node => (codes[node.Radio_Serial_Number] = node.Unlock_Code)
+  )
+  data.allFordVXlsxSheet1.nodes.map(
+    node => (codes[node.Radio_Serial_Number] = node.Unlock_Code)
+  )
+
+  const checkValidity = () => {
+    if (serial in codes) {
+      setIsInvalid(false)
+      navigate("/checkout")
+    } else {
+      setIsInvalid(true)
+    }
+  }
 
   return (
     <div className={styles.container}>
@@ -26,8 +49,13 @@ const Why = () => {
       <h1>Get Radio Code</h1>
       <div className={styles.codeContainer}>
         <p>Enter Serial:</p>
-        <input type="text" placeholder="Example: V123456" />
-        <button>Find</button>
+        <input
+          type="text"
+          value={serial}
+          placeholder="Example: V123456"
+          onInput={e => setSerial(e.target.value)}
+        />
+        <button onClick={checkValidity}>Find</button>
         {isInvalid && <p className={styles.error}>Not found.</p>}
       </div>
       <div className={styles.imageRow}>

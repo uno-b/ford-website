@@ -1,6 +1,6 @@
 import React from "react"
 import styles from "./enter.module.css"
-import img1 from "../../images/enter-2.jpg"
+import img1 from "../../images/enter-2.webp"
 
 const Enter = () => {
   return (

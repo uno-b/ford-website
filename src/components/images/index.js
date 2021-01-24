@@ -1,14 +1,14 @@
 import React from "react"
 import styles from "./images.module.css"
-import img1 from "../../images/gallery-1.jpg"
-import img2 from "../../images/gallery-2.jpg"
-import img3 from "../../images/gallery-3.jpg"
-import img4 from "../../images/gallery-4.jpg"
-import img5 from "../../images/gallery-5.jpg"
-import img6 from "../../images/gallery-6.jpg"
-import img7 from "../../images/gallery-7.jpg"
-import img8 from "../../images/gallery-8.jpg"
-import img9 from "../../images/gallery-9.jpg"
+import img1 from "../../images/gallery-1.webp"
+import img2 from "../../images/gallery-2.webp"
+import img3 from "../../images/gallery-3.webp"
+import img4 from "../../images/gallery-4.webp"
+import img5 from "../../images/gallery-5.webp"
+import img6 from "../../images/gallery-6.webp"
+import img7 from "../../images/gallery-7.webp"
+import img8 from "../../images/gallery-8.webp"
+import img9 from "../../images/gallery-9.webp"
 
 const Images = () => {
   return (

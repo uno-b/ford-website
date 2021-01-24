@@ -1,7 +1,7 @@
 import React from "react"
 import styles from "./serial.module.css"
-import img1 from "../../images/serial-2.jpg"
-import img2 from "../../images/serial-1.jpg"
+import img1 from "../../images/serial-2.webp"
+import img2 from "../../images/serial-1.webp"
 
 const Serial = () => {
   return (

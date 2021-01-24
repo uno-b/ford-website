@@ -1,9 +1,9 @@
 import React, { useState } from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import styles from "./main.module.css"
-import img1 from "../../images/code-1.jpg"
-import img2 from "../../images/code-2.jpg"
-import img3 from "../../images/code-3.jpg"
+import img1 from "../../images/code-1.webp"
+import img2 from "../../images/code-2.webp"
+import img3 from "../../images/code-3.webp"
 import { navigate } from "gatsby"
 
 const Why = () => {

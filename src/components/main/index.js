@@ -53,7 +53,7 @@ const Why = () => {
           id="serial-input"
           type="text"
           value={serial}
-          placeholder="Example: V123456"
+          placeholder="Example: V123456 or M123456"
           onInput={e => setSerial(e.target.value)}
         />
         <button onClick={checkValidity}>Find</button>

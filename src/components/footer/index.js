@@ -7,7 +7,10 @@ const Footer = () => {
       <div>
         <h5>
           In-case of any issues do send us a mail on our email id –
-          sales@druvainfotech.com for further assistance.{" "}
+          <a className={styles.email} href="mailto:sales@druvainfotech.com">
+            sales@druvainfotech.com
+          </a>{" "}
+          for further assistance.{" "}
         </h5>
         <h5>Copyright &copy; {new Date().getFullYear()}</h5>
       </div>

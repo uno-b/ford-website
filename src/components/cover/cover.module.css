@@ -32,8 +32,8 @@
 }
 
 .container p {
-  font-size: 1rem;
   color: #faf8ff;
+  font-weight: bold;
 }
 
 .container button {
@@ -104,7 +104,7 @@
     font-size: 1.5rem;
   }
   .container p {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -119,6 +119,6 @@
     font-size: 1.7rem;
   }
   .container p {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 }

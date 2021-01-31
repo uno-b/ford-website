@@ -56,7 +56,7 @@ const Why = () => {
           placeholder="Example: V123456 or M123456"
           onInput={e => setSerial(e.target.value)}
         />
-        <button onClick={checkValidity}>Find</button>
+        <button onClick={checkValidity}>Click to Get Unlock Code</button>
         {isInvalid && <p className={styles.error}>Not found.</p>}
       </div>
       <div className={styles.imageRow}>

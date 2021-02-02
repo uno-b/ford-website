@@ -1,0 +1,12 @@
+.paypal-wrapper {
+  margin: auto;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.paypal-wrapper form {
+  width: fit-content;
+  padding: 0;
+}

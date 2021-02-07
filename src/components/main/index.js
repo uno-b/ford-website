@@ -35,11 +35,17 @@ const Why = () => {
   )
 
   const checkValidity = () => {
+    {
+      /* Check if the code is in the Excel file
     if (serial in codes) {
       setIsInvalid(false)
       navigate("/checkout")
     } else {
       setIsInvalid(true)
+    }
+    */
+
+      return true
     }
   }
 

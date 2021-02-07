@@ -1,9 +1,12 @@
 import React from "react"
 import styles from "./footer.module.css"
 
-const Footer = () => {
+const Footer = ({ fixed }) => {
   return (
-    <footer className={styles.footer} id="contact">
+    <footer
+      className={`${styles.footer} ${fixed ? styles.fixed : ""}`}
+      id="contact"
+    >
       <div>
         <h5>
           In-case of any issues do send us a mail on our email id –

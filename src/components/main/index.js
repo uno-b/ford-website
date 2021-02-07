@@ -44,8 +44,8 @@ const Why = () => {
       setIsInvalid(true)
     }
     */
-
-      return true
+      setIsInvalid(false)
+      navigate("/checkout")
     }
   }
 
